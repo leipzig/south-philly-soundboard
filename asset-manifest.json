@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/south-philly-soundboard/static/css/main.000ff449.css",
+    "main.js": "/south-philly-soundboard/static/js/main.84d48d7d.js",
+    "static/js/453.daf0b135.chunk.js": "/south-philly-soundboard/static/js/453.daf0b135.chunk.js",
+    "index.html": "/south-philly-soundboard/index.html",
+    "main.000ff449.css.map": "/south-philly-soundboard/static/css/main.000ff449.css.map",
+    "main.84d48d7d.js.map": "/south-philly-soundboard/static/js/main.84d48d7d.js.map",
+    "453.daf0b135.chunk.js.map": "/south-philly-soundboard/static/js/453.daf0b135.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.000ff449.css",
+    "static/js/main.84d48d7d.js"
+  ]
+}
