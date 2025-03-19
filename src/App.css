@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  background-color: #111827;
+  color: white;
+  padding-bottom: 2rem;
 }
 
 .App-logo {
@@ -14,14 +18,21 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #1f2937;
+  padding: 20px;
   color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #60a5fa, #34d399);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .App-link {
@@ -34,5 +45,130 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.categories-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.category-section {
+  margin-bottom: 3rem;
+  background-color: #1f2937;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.category-title {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #f3f4f6;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.soundboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.sound-button {
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  word-wrap: break-word;
+  font-weight: 600;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Speaker-specific colors - Modern gradient backgrounds */
+.sound-button.joe {
+  background: linear-gradient(135deg, #f87171, #dc2626);
+}
+
+.sound-button.joe:hover {
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+  transform: translateY(-2px);
+}
+
+.sound-button.christine {
+  background: linear-gradient(135deg, #c084fc, #9333ea);
+}
+
+.sound-button.christine:hover {
+  background: linear-gradient(135deg, #a855f7, #7e22ce);
+  transform: translateY(-2px);
+}
+
+.sound-button.neighbor {
+  background: linear-gradient(135deg, #34d399, #059669);
+}
+
+.sound-button.neighbor:hover {
+  background: linear-gradient(135deg, #10b981, #047857);
+  transform: translateY(-2px);
+}
+
+.sound-button.eileen {
+  background: linear-gradient(135deg, #60a5fa, #2563eb);
+}
+
+.sound-button.eileen:hover {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  transform: translateY(-2px);
+}
+
+.sound-button:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.sound-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 768px) {
+  .categories-container {
+    padding: 0 0.5rem;
+  }
+
+  .category-section {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .soundboard-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .sound-button {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    min-height: 60px;
+  }
+
+  .category-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .App-header h1 {
+    font-size: 2rem;
   }
 }
