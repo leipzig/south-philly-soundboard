@@ -110,7 +110,7 @@ function App() {
                         audioRefs.current[file] = element;
                       }
                     }}
-                    src={`/wavs/${file}`}
+                    src={`${process.env.PUBLIC_URL}/wavs/${file}`}
                     preload="auto"
                   />
                 </React.Fragment>
